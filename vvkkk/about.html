@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us Page</title>
+    <link rel="stylesheet" href="css/style_aboutus.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+
+<body class="sub_page">
+
+    
+    <div class="header_area">
+        <header class="header_section">
+            <div class="container">
+                <nav>
+                    <div class="logo">
+                        <a href="#">
+                            <img src="images/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <ul class="nav-menu">
+                        <li class="nav-link"><a href="VVVK.html">Home</a></li>
+                        <li class="nav-link"><a href="about.html" class="active">About</a></li>
+                        <li class="nav-link"><a href="skills.html">Skills</a></li>
+                       
+                        <li class="nav-link"><a href="contact.html">Contact</a></li>
+                    </ul>
+
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+
+
+    <section class="about-section">
+        <div class="container">
+            <div class="inner-column">
+                <div class="sec-title">
+                    <span class="section-heading" style="color: white;">About myself</span>
+                    <h2 style="color: rgb(37, 150, 190);padding: 10px;">SENIOR<br> FRONTEND DEVELOPER</h2>
+                </div>
+            </div>
+           
+                <div class="container">
+                    <div class="detail-box">
+                        
+                            <p style="color: white;padding: 10px;"
+                            style="font-family: Georgia, 'Times New Roman', Times, serif;"
+                            style="font-weight: 300;">
+                           
+
+
+Welcome to my personal portfolio! I'm Varun karthik, a passionate and dedicated software engineer with a strong background in crafting innovative solutions to complex problems. With a keen eye for detail and a commitment to excellence, I strive to deliver high-quality software that not only meets but exceeds expectations.
+
+My journey in the world of software engineering began [X years ago], and since then, I've been on an exciting path of continuous learning and growth. Throughout my career, I've had the opportunity to work on a diverse range of projects, spanning from web development and mobile applications to system architecture and machine learning.
+
+I thrive in collaborative environments, where I can leverage my expertise in [programming languages/technologies you specialize in] to contribute effectively to cross-functional teams. Whether it's brainstorming ideas during the initial phase of a project, architecting scalable solutions, or diving into the nitty-gritty of coding, I'm always eager to tackle new challenges head-on.
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente sit maiores explicabo distinctio, soluta, atque similique eligendi harum consequuntur voluptates excepturi? Facilis porro ratione ut, explicabo magni saepe modi inventore.
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro nostrum repellat, dolorem nam quae autem iste esse? Laboriosam facere minima laudantium reiciendis, odio sed, hic, tenetur eum commodi itaque aliquid?
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, neque perspiciatis! Cupiditate dolorem a laudantium molestias optio omnis sunt corrupti eligendi totam voluptas sed soluta distinctio tempore quisquam, placeat possimus.
+                        </p>
+                        <button class="btn-box">Read More</button>
+                    </div>
+                </div>
+               
+           
+        </div>
+    </section>
+
+   
+
+    <section class="top-footer">
+        <div class="footer-row">
+            <div class="footer-col">
+                <div class="logo">
+                    <a href="#">
+                        <img src="images/logo.png" alt="logo">
+                    </a>
+                </div>
+             
+
+                <div class="icons">
+                    <a href="https://www.instagram.com/varun_karthik_2808?igsh=MXRhaHpqeXF1dXZ1ZA==" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/mwlite/profile/me?trk=p_mwlite_feed_updates-secondary_nav" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/your_instagram_id" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+            
+                    <a href="https://www.instagram.com/your_instagram_id" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li class="links"><a href="VVVK.html">Home</a></li>
+                    <li class="links"><a href="about.html">About</a></li>
+                    <li class="links"><a href="skills.html">Skills</a></li>
+                    
+                    <li class="links"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+          
+            <div class="footer-col">
+                <h4>Suggestions</h4>
+                <form action="#">
+                    <input type="email" placeholder="Enter email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bottom-footer">
+        <p>
+           
+            <a href="VVVK.html">VVK VARUN KARTHIK</a>
+        </p>
+    </footer>
+
+  
+
+    <script>
+        const nav = document.querySelector('nav');
+        const navMenu = document.querySelector(".nav-menu");
+        const hamburger = document.querySelector(".hamburger");
+        const navLink = document.querySelectorAll("li");
+
+        document.addEventListener('scroll', () => {
+            if (window.scrollY > 0) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+    </script>
+</body>
+
+</html>
